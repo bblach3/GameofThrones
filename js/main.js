@@ -35,7 +35,7 @@ btn.addEventListener("click", function() {
                 let listGroupContainer = document.querySelector('.card-header');
                 let liTags = "";
                 charArr.forEach(char => {
-                    if(char.name.length > 0){
+                    if(char.name.length > 0 && char.allegiances.length > 0){
                         liTags += `
                         <div class="col-4">
         <div class="card">
