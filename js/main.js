@@ -39,7 +39,7 @@ btn.addEventListener("click", function() {
                         liTags += `
                         <div class="col-4">
         <div class="card">
-            <div class="card-header bg-secondary">
+            <div class="card-header bg-secondary text-center">
                         
                         <a href="${char.url}" class="card text-light bg-dark">${char.name}</a>
                         </div>
