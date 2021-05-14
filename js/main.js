@@ -48,7 +48,8 @@ btn.addEventListener("click", function() {
                         `
                     }
                 })
-    
+                let par = document.getElementById('par');
+                par.innerHTML = "  Click on a name to reveal the house they belong to"
                 listGroupContainer.innerHTML = liTags;
             }
         })
@@ -66,6 +67,7 @@ btn.addEventListener("click", function() {
 
 
 let div = document.querySelector('.card-header');
+
 
 div.addEventListener('click', (e)=>{
 
@@ -85,6 +87,8 @@ div.addEventListener('click', (e)=>{
 
         modalTitle.innerHTML = detailedCharObj.name;
 
+        
+
         // console.log(detailedCharObj);
 
         if(detailedCharObj.allegiances.length > 0){
@@ -97,11 +101,12 @@ div.addEventListener('click', (e)=>{
                     
                     modalBody.innerHTML = `<br>${modalBody.innerHTML}<br>${houseObj.name}`;
                 })
-
+                
             })
+
         }
         exampleModal.show();
-
+        
     })
 })
 
